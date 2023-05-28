@@ -1,0 +1,158 @@
+.footer {
+  background-color: #000;
+
+  &.show_animation {
+    height: 0;
+    overflow: hidden;
+
+    animation: show_and_block 0.8s 5.5s ease-in-out forwards;
+  }
+
+  &.fixed {
+    height: auto;
+  }
+
+}
+
+@media screen and (min-width: 541px) {
+
+  .footer {
+    height: 505px;
+    padding : 110px 0 120px 0;
+    color : #ffffff;
+
+    & .footer_half {
+      width : 50%;
+
+      & .footer_title{
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #ffffff;
+      }
+
+      & .footer_logo {
+        margin-top : 40px;
+        img { 
+          width: 146px;
+          height: 39px;
+        }
+
+      }
+
+      & .footer_icon {
+        margin-top : 150px;
+
+        img {
+          margin-right : 36px;
+        }
+      }
+
+      & .footer_moto {
+        height: 152px;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 1.27;
+        letter-spacing: -1px;
+        color: #ffffff;
+      }
+
+      & .footer_menu {
+        margin-top: 50px;
+        line-height: 30px;
+        width : 110%;
+        
+        & .menu {
+          a {
+            color : #cccccc !important;
+            margin-right : 40px;
+          }
+          & .privacy {
+            margin-right : 40px;
+            color : #ffffff !important;
+          }
+        }
+      }
+
+      & .footer_copyright {
+        margin-top : 25px;
+        font-size: 14px;
+        color: #999999;
+      }
+
+    }
+
+  }
+}
+
+@media screen and (max-width: 540px) {
+
+  .footer {
+
+    background-color: #000;
+
+    .footer_logo {
+      margin-top : 30px;
+      img { 
+        width : 105px;
+      }
+    }
+
+    .footer_moto {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: normal;
+        color: #ffffff;
+        margin : 40px 0;
+    }
+
+    .footer_icon {
+      margin-left : 2px;
+      display: flex;
+
+      a { 
+        display: flex;
+        align-items : center;
+      }
+      img {
+        width : 18px;
+        margin-right : 24px;
+      }
+
+      .youtube {
+        width : 24px;
+      }
+    }
+
+    .footer_menu {
+      margin-top : 25px;
+      margin-right : 33.8%;
+        & .menu {
+
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 4px;
+
+          a {
+            color : #cccccc !important;
+            font-size : 12px;
+          }
+          & .privacy {
+            color : #ffffff !important;
+          }
+        }
+    }
+
+    .footer_copyright {
+      margin-top : 25px;
+      margin-bottom : 40px;
+      font-size: 10px;
+      color: #999999;
+    }
+  
+
+    .hide {
+      display : none;
+    }
+  }
+}

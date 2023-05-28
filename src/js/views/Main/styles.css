@@ -1,0 +1,3041 @@
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes right_fade_in {
+  0% {
+    position: absolute;
+    right: -35%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes right_fade_in_mobile {
+  0% {
+    position: absolute;
+    right: -100%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    right: 24%;
+  }
+}
+
+@keyframes top_fade_in {
+  0% {
+    position: absolute;
+    top: -10rem;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0rem;
+  }
+}
+
+@keyframes intro_slogan_finish {
+  0% {
+    height: 663px;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes intro_slogan_finish_mobile {
+  0% {
+    height: 462px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+
+@keyframes show_and_block {
+  0% {
+    height: auto;
+    opacity: 0;
+  }
+  65% {
+    height: auto;
+    opacity: 0;
+  }
+  100% {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+.letter_spacing_remove {
+  letter-spacing : 0 !important;
+}
+
+@media screen and (min-width: 541px) {
+
+  .main {
+    .modal_back {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1050;
+
+      .modal_header {
+        width: 400px;
+        padding-top: 3px;
+        height: 20px;
+        display: flex;
+        padding-right: 10px;
+        justify-content: flex-end;
+        background-color: #121212;
+
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .modal_contents {
+        background-color: #121212;
+        width: 400px;
+
+        .modal_body {
+          position: relative;
+
+          .popUpMain {
+            top: 0;
+            right: 0;
+            width: 400px;
+          }
+
+          .popUpSub {
+            position: absolute;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 500px;
+
+          }
+        }
+      }
+
+      .modal_footer {
+        width: 400px;
+        display: flex;
+        padding-right: 10px;
+        justify-content: flex-end;
+        background-color: #121212;
+        font-size: 10px;
+        color: #999999;
+      }
+
+    }
+
+    & .content {
+
+      height: 0;
+      overflow: inherit;
+      opacity: 0;
+      line-height: 1;
+
+      & .slogan_section {
+        height: 1068px;
+        width: 100%;
+
+        .slogan_tab_wrapper {
+
+          position: relative;
+          clear: left;
+          width: 100%;
+          overflow: hidden;
+
+
+          & .tab-content {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out 0s;
+            transition-delay: 0.5s;
+            transition-timing-function: linear;
+            -moz-transition: -moz-transform 1s ease-in-out 0s;
+            -webkit-transition: -webkit-transform 1s ease-in-out 0s;
+
+            .tab-pane {
+
+              width: 100%;
+              height: 1068px;
+
+            }
+
+            & .zero {
+              top: 0;
+              left: 0;
+              /* padding: 0 100px; */
+
+              .slogan_img {
+                left: 0;
+                overflow: hidden;
+                img { 
+                  width: 100%;
+                  min-width : 1900px;
+                  min-height : 1300px;
+                }
+              }
+            }
+
+            & .one {
+              top: 0;
+              left: 100%;
+
+              .slogan_img {
+                left: 100%;
+              }
+            }
+
+            & .two {
+              top: 0;
+              left: 200%;
+
+              .slogan_img {
+                left: 200%;
+              }
+            }
+          }
+
+          & .move-to-second {
+            transform: translateX(-33.3%);
+            -moz-transform: translateX(-33.3%);
+            -webkit-transform: translateX(-33.3%);
+          }
+
+          & .move-to-third {
+            transform: translateX(-66.6%);
+            -moz-transform: translateX(-66.6%);
+            -webkit-transform: translateX(-66.6%);
+          }
+
+          & .move-to-first {
+            transform: translateX(0px);
+            -moz-transform: translateX(0px);
+            -webkit-transform: translateX(0px);
+          }
+        }
+
+        & .slogan_text {
+          padding: 260px 154px 0 220px;
+
+          .slogan_img {
+
+            position: absolute;
+            top: -150px;
+            z-index: -1;
+            overflow-y: hidden;
+            width: 33.3%;
+            height: 1218px;
+
+          }
+
+          & .slogan_title {
+            color: #51a4ff;
+            font-size: 16px;
+            letter-spacing: 5.65px;
+            margin-bottom: 88px;
+          }
+
+          & .slogan_moto {
+            font-size: 60px;
+            font-weight: 100;
+            line-height: 79px;
+            letter-spacing: -1px;
+            color: #ffffff;
+            margin-bottom: 40px;
+          }
+
+          & .slogan_desc {
+            width: 432px;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.7;
+            letter-spacing: -0.5px;
+            margin-bottom : 85px;
+            color: #aaaaaa;
+          }
+
+          & .slogan_app_icon {
+            height: 50px;
+            margin-bottom: 160px;
+          }
+
+        }
+
+        & .slogan_tab_icon {
+          position: absolute;
+          top: 835px; /* pdf 다운로드 버튼이 생기면 750px로 변경 */
+          width: 22px;
+          height: 150px;
+          margin-left: 65px;
+
+          .slogan_tab_btn {
+            margin: 24px 0;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #555555;
+            display: flex;
+            justify-content: center;
+
+            &:last-child {
+              border-bottom: 0px;
+            }
+          }
+
+        }
+
+        & .slogan_tab_page {
+          margin-left: calc(100% - 100px); /* 페이지 셀렉팅이 나오면 250px 로 변경*/
+          display: flex;
+          position: absolute;
+          top: 870px;
+          justify-content: flex-end;
+
+
+          & .slogan_tab_select_page {
+            margin-top: 5px;
+            font-size: 50px;
+            color: #ffffff;
+            font-weight: bold;
+            font-family: SpoqaHanSans;
+
+          }
+
+          & .slogan_tab_all_page {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #ffffff;
+            display: flex;
+            align-items: flex-end;
+            font-family: SpoqaHanSans;
+
+          }
+
+          .slogan_scroll_down {
+            color: #aaaaaa;
+            font-family : 'Khand';
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+            transform: rotate(90deg);
+          }
+        }
+
+        & .slogan_tab_nav {
+          margin-left: calc(100% - 960px);
+          display: flex;
+          position: absolute;
+          top: 908px;
+          justify-content: flex-end;
+          background-color: #ffffff;
+          height: 160px;
+
+          & .slogan_tab_nav_text {
+            width: calc(880px / 3);
+            padding: 39px 40px 50px 40px;
+            position: relative;
+
+            &:after { /* div 보다 작은 border 집어넣기 */
+              content: "";
+              position: absolute;
+              right: 0;
+              z-index: 100;
+              top: 25%;
+              width: 1px;
+              height: 100px;
+              background: #e3e3e3;
+            }
+
+
+            & .slogan_tab_nav_title {
+              font-size: 20px;
+              margin-bottom: 14px;
+              color: #111111;
+            }
+
+            & .slogan_tab_nav_desc {
+              font-size: 14px;
+              line-height: 20px;
+              color: #999999;
+            }
+          }
+
+          & .slogan_tab_nav_text_last{
+
+            width: calc(880px / 3);
+            padding: 39px 40px 50px 40px;
+            position: relative;
+
+            &:after { /* div 보다 작은 border 집어넣기 */
+              position: absolute;
+              right: 0;
+              z-index: 100;
+              top: 25%;
+              width: 1px;
+              height: 100px;
+              background: #e3e3e3;
+            }
+            & .slogan_tab_nav_title {
+              font-size: 20px;
+              margin-bottom: 14px;
+              color: #111111;
+            }
+
+            & .slogan_tab_nav_desc {
+              font-size: 14px;
+              line-height: 20px;
+              color: #999999;
+            }
+          }
+
+
+          & .slogan_tab_nav_icon {
+
+            width: 80px;
+            height: 160px;
+
+            & .slogan_tab_nav_icon_right {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 80px;
+              background-color: #111111;
+
+              &:hover {
+                background-color: #2448a4;
+              }
+            }
+
+            & .slogan_tab_nav_icon_left {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 80px;
+              background-color: #dddddd;
+            }
+          }
+        }
+      }
+
+
+      &.fixed {
+        height: auto;
+        opacity: 1;
+      }
+
+
+      & .dapp_section {
+        background-color : #ffffff;
+        padding: 190px 0 130px 0;
+        position: relative;
+
+        & .dapp_title {
+          margin-top : 20px;
+          font-family: 'Khand';
+          font-size: 30px;
+          font-weight: 600;
+          letter-spacing: 10px;
+          text-align: center;
+          color: #000;
+        }
+
+        & .dapp_moto {
+          margin-top: 75px;
+          font-size: 50px;
+          font-weight : 100;
+          line-height: 1.37;
+          letter-spacing: -1px;
+          text-align: center;
+          color: #000;
+          display: flex;
+          justify-content: center;
+
+        }
+
+        & .dapp_desc {
+          font-size: 22px;
+          font-weight: 300;
+          margin-top: 30px;
+          line-height: 1.55;
+          letter-spacing: -0.5px;
+          text-align: center;
+          color: #777;
+
+        }
+
+        & .dapp_img {
+          display: flex;
+          justify-content: flex-end;
+
+          img {
+            width : 100%;
+            max-width: 1600px;
+            height: 800px;
+          }
+        }
+
+        & .dapp_img_temp {
+          display: flex;
+          justify-content: flex-end;
+          margin-top : 90px;
+          img {
+            width : 100%;
+            max-width : calc(100% - 300px);
+            height : 350px;
+          }
+        }
+
+      }
+
+
+      & .wallet_section {
+        background-color: #f6f6f6;
+        height: 1088px;
+        padding: 126px 0 200px 60px;
+        display: flex;
+        justify-content: center;
+
+        & .wallet_text {
+          /* text-align: center; */
+          color: #111111;
+          font-weight: 100;
+          font-size: 50px;
+          margin: 203px 0 50px 0;
+
+          & span {
+            line-height: 1.37;
+          }
+        }
+
+        .wallet_tabs {
+
+          & .nav-tabs {
+            display: flex;
+            height: 50px;
+
+            .nav-item {
+              cursor: pointer;
+              height: 50px;
+              font-size: 22px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+
+              .nav-link {
+                color : #777;
+              }
+
+              img {
+                padding : 0 30px;
+              }
+
+            }
+
+
+            .active {
+              background-color: #2448a4;
+              border-radius: 25px;
+              padding: 10px 23px !important;
+              margin : 0 30px;
+
+              .nav-link { 
+                color : #ffffff;
+              }
+
+              &:first-child {
+                margin: 0px 30px 0 0;
+              }
+            }
+
+
+
+          }
+
+          .tab-content {
+            margin-top: 37px;
+            font-size: 18px;
+            line-height: 30px;
+            width: 524px;
+            color: #777777;
+            letter-spacing: -0.5px;
+            font-weight : 300;
+
+          }
+        }
+
+        & .wallet_div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          margin-left: 129px;
+
+          .white_back {
+            width : calc(100% - (1355px + (50% - 640px)));
+            z-index: 5;
+          }
+
+          .selectedItem {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            top: 0px;
+            right: 40px;
+            width: 340px;
+            height: auto;
+            margin: 20px calc((100% - 380px) / 2) ;
+          }
+
+          & .wallet_img {
+            display: none;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+            top: 0px;
+            right: 40px;
+            width: 340px;
+            height: auto;
+            margin: 20px calc((100% - 380px) / 2) ;
+
+            &.active {
+              display: flex;
+              z-index: 4;
+              animation: show 0.8s ease-in-out forwards;
+            }
+          }
+        }
+
+        .wallet_div_cover {
+          position: absolute;
+          top: 20px;
+          right: -18px;
+          width: calc(100% - 490px);
+          max-width: 190px;
+          height: 100%;
+          background-color: #ffffff;
+          z-index: 4;
+        }
+
+      }
+
+
+      & .reward_section {
+        padding: 203px 0 80px 0;
+        text-align: center;
+
+        & .reward_title {
+          font-size: 30px;
+          letter-spacing: -0.5px;
+          font-weight: 500;
+          color: #111111;
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 28px;
+            height: 28px;
+            margin: 0 5px;
+          }
+        }
+
+        & .reward_moto {
+          font-size: 50px;
+          letter-spacing: -1px;
+          line-height: 82px;
+          font-weight: 100;
+          margin-top: 51px;
+        }
+
+        & .reward_desc {
+          font-size: 22px;
+          letter-spacing: -0.5px;
+          margin-top: 34px;
+          color: #777777;
+          line-height: 34px;
+          font-weight: 300;
+        }
+
+        & .reward_img {
+          margin-top : 80px;
+          img {
+            width: 100vw;
+            max-width : 1800px;
+          }
+        }
+      }
+
+      & .doubleR_section {
+        height: 575px;
+        background-color: #000000;
+        padding: 66.7px 0 71.4px 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("../../../assets/images/combined-shape.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto;
+
+        & .doubleR_title {
+          max-width: 190px;
+          height: 30px;
+          margin-left: calc((100% - 180px) / 2);
+          border-radius: 19px;
+          background-color: #a2835d;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+        }
+
+        & .doubleR_moto {
+
+          display: flex;
+          justify-content: center;
+
+          font-family: 'Khand';
+          margin-top: 40px;
+          font-size: 62px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          text-align: center;
+          color: #ffffff;
+
+          .icon-x {
+            margin: 10px;
+          }
+        }
+
+        & .doubleR_desc {
+
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 1.44;
+          letter-spacing: -0.5px;
+          text-align: center;
+          color: #ffffff;
+          margin-top: 30px;
+
+        }
+
+        & .doubleR_img {
+          margin-top: 48px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        & .doubleR_icon {
+          margin-top: 14px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      
+
+      & .market_section {
+        height: 1625px;
+        padding: 200px 0 150px 0;
+        background-color : #f6f6f6;
+
+        & .market_title {
+          font-size: 30px;
+          font-weight: 600;
+          font-family: 'Khand';
+          letter-spacing: 10px;
+          text-align: center;
+          color: #111111;
+        }
+
+        & .market_moto {
+          margin-top: 52px;
+          font-size: 50px;
+          font-weight: 100;
+          line-height: 1.37;
+          letter-spacing: -1px;
+          text-align: center;
+          color: #111111;
+        }
+
+        & .market_desc {
+          margin-top: 34px;
+          font-size: 22px;
+          font-weight: 300;
+          line-height: 1.55;
+          letter-spacing: -0.5px;
+          text-align: center;
+          color: #777777;
+        }
+
+        & .market_img {
+          margin-top: 78px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  /* 영어 버전 letter-space 관리용 */
+
+
+  .main.eng {
+    .modal_back {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1050;
+
+      .modal_header {
+        width: 400px;
+        padding-top: 3px;
+        height: 20px;
+        display: flex;
+        padding-right: 10px;
+        justify-content: flex-end;
+        background-color: #121212;
+
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .modal_contents {
+        background-color: #121212;
+        width: 400px;
+
+        .modal_body {
+          position: relative;
+
+          .popUpMain {
+            top: 0;
+            right: 0;
+            width: 400px;
+          }
+
+          .popUpSub {
+            position: absolute;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 500px;
+
+          }
+        }
+      }
+
+      .modal_footer {
+        width: 400px;
+        display: flex;
+        padding-right: 10px;
+        justify-content: flex-end;
+        background-color: #121212;
+        font-size: 10px;
+        color: #999999;
+      }
+
+    }
+
+    & .content {
+
+      height: 0;
+      overflow: inherit;
+      opacity: 0;
+      line-height: 1;
+
+      & .slogan_section {
+        height: 1068px;
+        width: 100%;
+
+        .slogan_tab_wrapper {
+
+          position: relative;
+          clear: left;
+          width: 100%;
+          overflow: hidden;
+
+
+          & .tab-content {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out 0s;
+            transition-delay: 0.5s;
+            transition-timing-function: linear;
+            -moz-transition: -moz-transform 1s ease-in-out 0s;
+            -webkit-transition: -webkit-transform 1s ease-in-out 0s;
+
+            .tab-pane {
+
+              width: 100%;
+              height: 1068px;
+
+            }
+
+            & .zero {
+              top: 0;
+              left: 0;
+              /* padding: 0 100px; */
+
+              .slogan_img {
+                left: 0;
+                overflow: hidden;
+                img { 
+                  width: 100%;
+                  min-width : 1900px;
+                  min-height : 1300px;
+                }
+              }
+            }
+
+            & .one {
+              top: 0;
+              left: 100%;
+
+              .slogan_img {
+                left: 100%;
+              }
+            }
+
+            & .two {
+              top: 0;
+              left: 200%;
+
+              .slogan_img {
+                left: 200%;
+              }
+            }
+          }
+
+          & .move-to-second {
+            transform: translateX(-33.3%);
+            -moz-transform: translateX(-33.3%);
+            -webkit-transform: translateX(-33.3%);
+          }
+
+          & .move-to-third {
+            transform: translateX(-66.6%);
+            -moz-transform: translateX(-66.6%);
+            -webkit-transform: translateX(-66.6%);
+          }
+
+          & .move-to-first {
+            transform: translateX(0px);
+            -moz-transform: translateX(0px);
+            -webkit-transform: translateX(0px);
+          }
+        }
+
+        & .slogan_text {
+          padding: 260px 154px 0 220px;
+
+          .slogan_img {
+
+            position: absolute;
+            top: -150px;
+            z-index: -1;
+            overflow-y: hidden;
+            width: 33.3%;
+            height: 1218px;
+
+          }
+
+          & .slogan_title {
+            color: #51a4ff;
+            font-size: 16px;
+            letter-spacing: 5.65px;
+            margin-bottom: 88px;
+          }
+
+          & .slogan_moto {
+            font-size: 60px;
+            font-weight: 100;
+            line-height: 79px;
+            letter-spacing: 0px;
+            color: #ffffff;
+            margin-bottom: 40px;
+          }
+
+          & .slogan_desc {
+            width: 432px;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.7;
+            letter-spacing: 0px;
+            margin-bottom : 85px;
+            color: #aaaaaa;
+            font-family : 'APPLE SD Gothic NEO' !important;
+          }
+
+          & .slogan_app_icon {
+            height: 50px;
+            margin-bottom: 160px;
+          }
+
+        }
+
+        & .slogan_tab_icon {
+          position: absolute;
+          top: 835px; /* pdf 다운로드 버튼이 생기면 750px로 변경 */
+          width: 22px;
+          height: 150px;
+          margin-left: 65px;
+
+          .slogan_tab_btn {
+            margin: 24px 0;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #555555;
+            display: flex;
+            justify-content: center;
+
+            &:last-child {
+              border-bottom: 0px;
+            }
+          }
+
+        }
+
+        & .slogan_tab_page {
+          margin-left: calc(100% - 100px); /* 페이지 셀렉팅이 나오면 250px 로 변경*/
+          display: flex;
+          position: absolute;
+          top: 870px;
+          justify-content: flex-end;
+
+
+          & .slogan_tab_select_page {
+            margin-top: 5px;
+            font-size: 50px;
+            color: #ffffff;
+            font-weight: bold;
+            font-family: SpoqaHanSans;
+
+          }
+
+          & .slogan_tab_all_page {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #ffffff;
+            display: flex;
+            align-items: flex-end;
+            font-family: SpoqaHanSans;
+
+          }
+
+          .slogan_scroll_down {
+            color: #aaaaaa;
+            font-family : 'Khand';
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+            transform: rotate(90deg);
+          }
+        }
+
+        & .slogan_tab_nav {
+          margin-left: calc(100% - 960px);
+          display: flex;
+          position: absolute;
+          top: 908px;
+          justify-content: flex-end;
+          background-color: #ffffff;
+          height: 160px;
+
+          & .slogan_tab_nav_text {
+            width: calc(880px / 3);
+            padding: 39px 40px 50px 40px;
+            position: relative;
+
+            &:after { /* div 보다 작은 border 집어넣기 */
+              content: "";
+              position: absolute;
+              right: 0;
+              z-index: 100;
+              top: 25%;
+              width: 1px;
+              height: 100px;
+              background: #e3e3e3;
+            }
+
+
+            & .slogan_tab_nav_title {
+              font-size: 20px;
+              margin-bottom: 14px;
+              color: #111111;
+            }
+
+            & .slogan_tab_nav_desc {
+              font-size: 14px;
+              line-height: 20px;
+              color: #999999;            
+              font-family : 'APPLE SD Gothic NEO' !important;
+
+            }
+          }
+
+          & .slogan_tab_nav_text_last{
+
+            width: calc(880px / 3);
+            padding: 39px 40px 50px 40px;
+            position: relative;
+
+            &:after { /* div 보다 작은 border 집어넣기 */
+              position: absolute;
+              right: 0;
+              z-index: 100;
+              top: 25%;
+              width: 1px;
+              height: 100px;
+              background: #e3e3e3;
+            }
+            & .slogan_tab_nav_title {
+              font-size: 20px;
+              margin-bottom: 14px;
+              color: #111111;
+            }
+
+            & .slogan_tab_nav_desc {
+              font-size: 14px;
+              line-height: 20px;
+              color: #999999;            
+              font-family : 'APPLE SD Gothic NEO' !important;
+
+            }
+          }
+
+
+          & .slogan_tab_nav_icon {
+
+            width: 80px;
+            height: 160px;
+
+            & .slogan_tab_nav_icon_right {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 80px;
+              background-color: #111111;
+
+              &:hover {
+                background-color: #2448a4;
+              }
+            }
+
+            & .slogan_tab_nav_icon_left {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 80px;
+              background-color: #dddddd;
+            }
+          }
+        }
+      }
+
+
+      &.fixed {
+        height: auto;
+        opacity: 1;
+      }
+
+
+      & .dapp_section {
+        background-color : #ffffff;
+        padding: 190px 0 130px 0;
+        position: relative;
+
+        & .dapp_title {
+          margin-top : 20px;
+          font-family: 'Khand';
+          font-size: 30px;
+          font-weight: 600;
+          letter-spacing: 10px;
+          text-align: center;
+          color: #000;
+        }
+
+        & .dapp_moto {
+          margin-top: 75px;
+          font-size: 50px;
+          font-weight : 100;
+          line-height: 1.37;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #000;
+          display: flex;
+          justify-content: center;
+
+        }
+
+        & .dapp_desc {
+          font-size: 22px;
+          font-weight: 300;
+          margin-top: 30px;
+          line-height: 1.55;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #777;
+          font-family : 'APPLE SD Gothic NEO' !important;
+
+        }
+
+        & .dapp_img {
+          display: flex;
+          justify-content: flex-end;
+
+          img {
+            width : 100%;
+            max-width: 1600px;
+            height: 800px;
+          }
+        }
+
+      }
+
+
+      & .wallet_section {
+        background-color: #f6f6f6;
+        height: 1088px;
+        padding: 126px 0 200px 60px;
+        display: flex;
+        justify-content: center;
+
+        & .wallet_text {
+          /* text-align: center; */
+          color: #111111;
+          font-weight: 100;
+          font-size: 50px;
+          margin: 203px 0 50px 0;
+
+          & span {
+            line-height: 1.37;
+          }
+        }
+
+        .wallet_tabs {
+
+          & .nav-tabs {
+            display: flex;
+            height: 50px;
+
+            .nav-item {
+              cursor: pointer;
+              height: 50px;
+              font-size: 22px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+
+              .nav-link {
+                color : #777;
+              }
+
+              img {
+                padding : 0 30px;
+              }
+
+            }
+
+
+            .active {
+              background-color: #2448a4;
+              border-radius: 25px;
+              padding: 10px 23px !important;
+              margin : 0 30px;
+
+              .nav-link { 
+                color : #ffffff;
+              }
+
+              &:first-child {
+                margin: 0px 30px 0 0;
+              }
+            }
+
+
+
+          }
+
+          .tab-content {
+            margin-top: 37px;
+            font-size: 18px;
+            line-height: 30px;
+            width: 524px;
+            color: #777777;
+            letter-spacing: 0px;
+            font-weight : 300;
+            font-family : 'APPLE SD Gothic NEO' !important;
+
+          }
+        }
+
+        & .wallet_div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          margin-left: 129px;
+
+          .white_back {
+            width : calc(100% - (1355px + (50% - 640px)));
+            z-index: 5;
+          }
+
+          .selectedItem {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            top: 0px;
+            right: 40px;
+            width: 340px;
+            height: auto;
+            margin: 20px calc((100% - 380px) / 2) ;
+          }
+
+          & .wallet_img {
+            display: none;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+            top: 0px;
+            right: 40px;
+            width: 340px;
+            height: auto;
+            margin: 20px calc((100% - 380px) / 2) ;
+
+            &.active {
+              display: flex;
+              z-index: 4;
+              animation: show 0.8s ease-in-out forwards;
+            }
+          }
+        }
+
+        .wallet_div_cover {
+          position: absolute;
+          top: 20px;
+          right: -18px;
+          width: calc(100% - 490px);
+          max-width: 190px;
+          height: 100%;
+          background-color: #ffffff;
+          z-index: 4;
+        }
+
+      }
+
+
+      & .reward_section {
+        padding: 203px 0 80px 0;
+        text-align: center;
+
+        & .reward_title {
+          font-size: 30px;
+          letter-spacing: 0px;
+          font-weight: 500;
+          color: #111111;
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 28px;
+            height: 28px;
+            margin: 0 5px;
+          }
+        }
+
+        & .reward_moto {
+          font-size: 50px;
+          letter-spacing:0px;
+          line-height: 82px;
+          font-weight: 100;
+          margin-top: 51px;
+        }
+
+        & .reward_desc {
+          font-size: 22px;
+          letter-spacing: 0px;
+          margin-top: 34px;
+          color: #777777;
+          line-height: 34px;
+          font-weight: 300;
+          font-family : 'APPLE SD Gothic NEO' !important;
+        }
+
+        & .reward_img {
+          margin-top : 80px;
+          img {
+            width: 100vw;
+            max-width : 1800px;
+          }
+        }
+      }
+
+      & .doubleR_section {
+        height: 575px;
+        background-color: #000000;
+        padding: 66.7px 0 71.4px 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("../../../assets/images/combined-shape.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto;
+
+        & .doubleR_title {
+          max-width: 190px;
+          height: 30px;
+          margin-left: calc((100% - 180px) / 2);
+          border-radius: 19px;
+          background-color: #a2835d;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+        }
+
+        & .doubleR_moto {
+
+          display: flex;
+          justify-content: center;
+
+          font-family: 'Khand';
+          margin-top: 40px;
+          font-size: 62px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          text-align: center;
+          color: #ffffff;
+
+          .icon-x {
+            margin: 10px;
+          }
+        }
+
+        & .doubleR_desc {
+
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 1.44;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #ffffff;
+          margin-top: 30px;
+          font-family : 'APPLE SD Gothic NEO' !important;
+
+        }
+
+        & .doubleR_img {
+          margin-top: 48px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        & .doubleR_icon {
+          margin-top: 14px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      
+
+      & .market_section {
+        height: 1625px;
+        padding: 200px 0 150px 0;
+
+        & .market_title {
+          font-size: 30px;
+          font-weight: 600;
+          font-family: 'Khand';
+          letter-spacing: 10px;
+          text-align: center;
+          color: #111111;
+        }
+
+        & .market_moto {
+          margin-top: 52px;
+          font-size: 50px;
+          font-weight: 100;
+          line-height: 1.37;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #111111;
+        }
+
+        & .market_desc {
+          margin-top: 34px;
+          font-size: 22px;
+          font-weight: 300;
+          line-height: 1.55;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #777777;
+          font-family : 'APPLE SD Gothic NEO' !important;
+        }
+
+        & .market_img {
+          margin-top: 78px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 540px) {
+
+  .main {
+    .modal_back {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1050;
+
+      .modal_header {
+        width: 400px;
+        padding-top: 3px;
+        height: 20px;
+        display: flex;
+        padding-right: 10px;
+        justify-content: flex-end;
+        background-color: #121212;
+
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .modal_contents {
+        background-color: #121212;
+        width: 400px;
+
+        .modal_body {
+          position: relative;
+
+          .popUpMain {
+            top: 0;
+            right: 0;
+            width: 400px;
+          }
+
+          .popUpSub {
+            position: absolute;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 500px;
+
+          }
+        }
+      }
+
+      .modal_footer {
+        width: 400px;
+        display: flex;
+        padding-right: 10px;
+        justify-content: flex-end;
+        background-color: #121212;
+        font-size: 10px;
+        color: #999999;
+      }
+
+    }
+
+    & .content {
+
+      height: 0;
+      overflow: inherit;
+      opacity: 0;
+      line-height: 1;
+
+      & .slogan_section {
+
+        .slogan_tab_wrapper {
+
+          position: relative;
+          clear: left;
+          width: 100%;
+          overflow: hidden;
+
+
+          & .tab-content {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out 0s;
+            transition-delay: 0.5s;
+            transition-timing-function: linear;
+            -moz-transition: -moz-transform 1s ease-in-out 0s;
+            -webkit-transition: -webkit-transform 1s ease-in-out 0s;
+
+            .tab-pane {
+
+              width: 100%;
+
+            }
+
+            & .zero {
+              top: 0;
+              left: 0;
+              /* padding: 0 100px; */
+
+              .slogan_img {
+                left: 0;
+                overflow: hidden;
+                img { 
+                  width: 100%;
+                  min-width : 540px;
+                  min-height : 400px;
+                }
+              }
+            }
+
+            & .one {
+              top: 0;
+              left: 100%;
+
+              .slogan_img {
+                left: 100%;
+              }
+            }
+
+            & .two {
+              top: 0;
+              left: 200%;
+
+              .slogan_img {
+                left: 200%;
+              }
+            }
+          }
+
+          & .move-to-second {
+            transform: translateX(-33.3%);
+            -moz-transform: translateX(-33.3%);
+            -webkit-transform: translateX(-33.3%);
+          }
+
+          & .move-to-third {
+            transform: translateX(-66.6%);
+            -moz-transform: translateX(-66.6%);
+            -webkit-transform: translateX(-66.6%);
+          }
+
+          & .move-to-first {
+            transform: translateX(0px);
+            -moz-transform: translateX(0px);
+            -webkit-transform: translateX(0px);
+          }
+        }
+
+        & .slogan_text {
+          padding: 115px 0 0 30px;
+
+          .slogan_img {
+
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            overflow-y: hidden;
+            width: 33.3%;
+
+          }
+
+          & .slogan_title {
+            color: #51a4ff;
+            font-size: 10px;
+            letter-spacing: 2.8px;
+            margin-bottom: 14px;
+            line-height: 1.75;
+          }
+
+          & .slogan_moto {
+            font-size: 28px;
+            font-weight: 100;
+            line-height: 1.2;
+            margin-left : -3px;
+            letter-spacing: -0.4px;
+            color: #ffffff;
+          }
+
+
+          & .slogan_app_icon {
+            margin-top : 26px;
+            margin-bottom: 50px;
+            
+            img { 
+              width : 70px;
+              height : auto;              
+              margin-right : 21px;
+            }
+
+          }
+
+          .slogan_down_btn {
+            margin-bottom : 34px;
+            
+            img { 
+              height : auto;              
+              width : 60px;
+            }
+          }
+
+        }
+
+
+        & .slogan_tab_icon {
+          position: absolute;
+          top: 265px; /* pdf 다운로드 버튼이 생기면 750px로 변경 */
+          width: 22px;
+          height: 150px;
+          margin-left: 25px;
+
+          .slogan_tab_btn {
+            margin: 24px 0;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #555555;
+            display: flex;
+            justify-content: center;
+
+            a {
+              img {
+                width : 15px;
+              }
+            }
+
+            &:last-child {
+              border-bottom: 0px;
+            }
+          }
+
+        }
+
+
+        & .slogan_tab_page {
+          margin-left: calc(100% - 100px); /* 페이지 셀렉팅이 나오면 250px 로 변경*/
+          display: flex;
+          position: absolute;
+          top: 870px;
+          justify-content: flex-end;
+
+
+          & .slogan_tab_select_page {
+            margin-top: 5px;
+            font-size: 50px;
+            color: #ffffff;
+            font-weight: bold;
+            font-family: SpoqaHanSans;
+
+          }
+
+          & .slogan_tab_all_page {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #ffffff;
+            display: flex;
+            align-items: flex-end;
+            font-family: SpoqaHanSans;
+
+          }
+
+          .slogan_scroll_down {
+            color: #aaaaaa;
+            font-family : 'Khand';
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+            transform: rotate(90deg);
+          }
+        }
+
+        & .slogan_tab_nav {
+          margin-left: calc(100% - 960px);
+          display: flex;
+          position: absolute;
+          top: 908px;
+          justify-content: flex-end;
+          background-color: #ffffff;
+          height: 160px;
+
+          & .slogan_tab_nav_text {
+            width: calc(880px / 3);
+            padding: 39px 40px 50px 40px;
+            position: relative;
+
+            &:after { /* div 보다 작은 border 집어넣기 */
+              content: "";
+              position: absolute;
+              right: 0;
+              z-index: 100;
+              top: 25%;
+              width: 1px;
+              height: 100px;
+              background: #e3e3e3;
+            }
+
+
+            & .slogan_tab_nav_title {
+              font-size: 20px;
+              margin-bottom: 14px;
+              color: #111111;
+            }
+
+            & .slogan_tab_nav_desc {
+              font-size: 14px;
+              line-height: 20px;
+              color: #999999;
+            }
+          }
+
+          & .slogan_tab_nav_text_last{
+
+            width: calc(880px / 3);
+            padding: 39px 40px 50px 40px;
+            position: relative;
+
+            &:after { /* div 보다 작은 border 집어넣기 */
+              position: absolute;
+              right: 0;
+              z-index: 100;
+              top: 25%;
+              width: 1px;
+              height: 100px;
+              background: #e3e3e3;
+            }
+            & .slogan_tab_nav_title {
+              font-size: 20px;
+              margin-bottom: 14px;
+              color: #111111;
+            }
+
+            & .slogan_tab_nav_desc {
+              font-size: 14px;
+              line-height: 20px;
+              color: #999999;
+            }
+          }
+
+
+          & .slogan_tab_nav_icon {
+
+            width: 80px;
+            height: 160px;
+
+            & .slogan_tab_nav_icon_right {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 80px;
+              background-color: #111111;
+
+              &:hover {
+                background-color: #2448a4;
+              }
+            }
+
+            & .slogan_tab_nav_icon_left {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 80px;
+              background-color: #dddddd;
+            }
+          }
+        }
+      }
+
+
+      &.fixed {
+        height: auto;
+        opacity: 1;
+      }
+
+
+      & .dapp_section {
+        background-color : #ffffff;
+        padding: 60px 0 36px 0;
+        position: relative;
+
+        & .dapp_title {
+          font-family: 'Khand';
+          font-size: 15px;
+          margin-top : 20px;
+          font-weight: 600;
+          letter-spacing: 3px;
+          text-align: center;
+          color: #111;
+        }
+
+        & .dapp_moto {
+          margin-top: 20px;
+          font-size: 22px;
+          font-weight : 100;
+          line-height: 1.37;
+          letter-spacing: -1px;
+          text-align: center;
+          color: #000;
+          display: flex;
+          justify-content: center;
+
+        }
+
+        & .dapp_desc {
+          font-size: 12px;
+          font-weight: 300;
+          margin-top: 20px;
+          line-height: 1.7;
+          letter-spacing: -0.5px;
+          text-align: center;
+          color: #777;
+
+        }
+
+        & .dapp_img {
+
+          img {
+            width : 100%;
+          }
+        }
+
+        & .dapp_img_temp {
+          margin-top : 40px;
+          margin-left : -30px;
+          overflow: hidden;
+          img {
+            max-width : 120vw;
+          }
+        }
+
+      }
+
+
+      & .wallet_section {
+        background-color: #f6f6f6;
+        padding: 60px 26px 30px 26px;
+        display: flex;
+        justify-content: center;
+
+
+        & .wallet_text {
+          text-align: center;
+          color: #111111;
+          font-weight: 100;
+          font-size: 22px;
+
+          & span {
+            line-height: 1.37;
+          }
+        }
+
+        .wallet_tabs {
+
+          margin-right : 15px;
+
+          & .nav-tabs {
+            margin-top : 21px;
+            display: flex;
+            justify-content: center;
+
+            .nav-item {
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+
+              .nav-link {
+                color : #333;
+                font-size : 14px;
+                font-weight:300;
+                letter-spacing : -0.5px;
+              }
+
+              img {
+                padding : 0 10px;
+              }
+
+            }
+
+
+            .active {
+              background-color: #2448a4;
+              border-radius: 25px;
+              padding: 7px 11px 8px 11px !important;
+              margin : 0 10px;
+
+              .nav-link { 
+                color : #ffffff;
+              }
+
+              &:first-child {
+                margin: 0px 10px 0 0;
+              }
+            }
+
+
+
+          }
+
+          .tab-content {
+            margin : 20px 0;
+            font-size: 12px;
+            line-height: 18px;
+            color: #777777;
+            letter-spacing: -0.5px;
+            font-weight : 300;
+            text-align : center;
+            min-height : 40px;
+            span {
+              line-height : 1.7;
+            }
+          }
+        }
+
+        & .wallet_div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          padding-left : 15px;
+
+          .white_back {
+            width : calc(100% - (1355px + (50% - 640px)));
+            z-index: 5;
+          }
+
+          .selectedItem {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            top: 0px;
+            right: 40px;
+            width: 190px;
+            height: auto;
+            margin: 17px calc((100% - 260px) / 2) ;
+          }
+
+          & .wallet_img {
+            display: none;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+            top: 0px;
+            right: 40px;
+            width: 190px;
+            height: auto;
+            margin: 17px calc((100% - 260px) / 2) ;
+
+
+            &.active {
+              display: flex;
+              z-index: 4;
+              animation: show 0.8s ease-in-out forwards;
+            }
+          }
+        }
+
+        .wallet_div_cover {
+          position: absolute;
+          top: 20px;
+          right: -18px;
+          width: calc(100% - 490px);
+          max-width: 190px;
+          height: 100%;
+          background-color: #ffffff;
+          z-index: 4;
+        }
+
+      }
+
+
+      & .reward_section {
+        padding: 60px 0 40px 0;
+        text-align: center;
+
+        & .reward_title {
+          font-size: 15px;
+          letter-spacing: -0.5px;
+          font-weight: 500;
+          color: #111111;
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 14px;
+            height: 14px;
+            margin: 0 5px;
+          }
+        }
+
+        & .reward_moto {
+          font-size: 22px;
+          letter-spacing: -1px;
+          line-height: 1.43;
+          font-weight: 100;
+          margin-top: 20px;
+        }
+
+        & .reward_desc {
+          font-size: 12px;
+          letter-spacing: -0.5px;
+          margin-top: 20px;
+          color: #777777;
+          line-height: 1.7;
+          font-weight: 300;
+
+        }
+
+        & .reward_img {
+          margin-top : 10px;
+          margin-left : -65px;
+          overflow: hidden;
+
+          img {
+            width: 140vw;
+          }
+        }
+      }
+
+      & .doubleR_section {
+        background-color: #000000;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("../../../assets/images/combined-shape.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto;
+
+        & .doubleR_title {
+          max-width: 145px;
+          padding : 5px 12px;
+          margin-left: calc((100% - 145px) / 2);
+          font-size : 10px;
+          border-radius: 19px;
+          background-color: #a2835d;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+        }
+
+        & .doubleR_moto {
+
+          display: flex;
+          justify-content: center;
+
+          font-family: 'Khand';
+          margin-top: 11px;
+          font-size: 30px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          text-align: center;
+          color: #ffffff;
+
+          .icon-x {
+            margin: 5px;
+            width : 22px !important;
+            height : 22px !important;
+          }
+
+          img { 
+            width : 122px;
+            height : 30px;
+          }
+        }
+
+        & .doubleR_desc {
+
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 1.7;
+          letter-spacing: -0.3px;
+          text-align: center;
+          color: #ffffff;
+          margin-top: 11px;
+
+        }
+
+        & .doubleR_img {
+          margin-top: 33px;
+          overflow: hidden;
+          margin-left : -10px;
+
+          img {
+            width: 140%;
+          }
+        }
+
+        & .doubleR_icon {
+          margin-top: 14px;
+          display: flex;
+          justify-content: center;
+
+          img { 
+            width : 150px;
+            height : 35px;
+          }
+
+        }
+      }
+      
+
+      & .market_section {
+        padding: 60px 0 40px 0;        
+        background-color : #f6f6f6;
+
+        & .market_title {
+          font-size: 15px;
+          font-weight: 600;
+          font-family: 'Khand';
+          letter-spacing: 3px;
+          text-align: center;
+          color: #111111;
+        }
+
+        & .market_moto {
+          margin-top: 20px;
+          font-size: 22px;
+          font-weight: 100;
+          line-height: 1.43;
+          letter-spacing: -1px;
+          text-align: center;
+          color: #111111;
+        }
+
+        & .market_desc {
+          margin-top: 20px;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 1.55;
+          letter-spacing: -0.5px;
+          text-align: center;
+          color: #777777;
+        }
+
+        & .market_img {
+          margin-top: 40px;
+          margin-left : -35px;
+          overflow: hidden;
+
+          img {
+            width: 105%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  /* 영어 모바일용 */
+
+
+  .main.eng {
+    .modal_back {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1050;
+
+      .modal_header {
+        width: 400px;
+        padding-top: 3px;
+        height: 20px;
+        display: flex;
+        padding-right: 10px;
+        justify-content: flex-end;
+        background-color: #121212;
+
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .modal_contents {
+        background-color: #121212;
+        width: 400px;
+
+        .modal_body {
+          position: relative;
+
+          .popUpMain {
+            top: 0;
+            right: 0;
+            width: 400px;
+          }
+
+          .popUpSub {
+            position: absolute;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 500px;
+
+          }
+        }
+      }
+
+      .modal_footer {
+        width: 400px;
+        display: flex;
+        padding-right: 10px;
+        justify-content: flex-end;
+        background-color: #121212;
+        font-size: 10px;
+        color: #999999;
+      }
+
+    }
+
+    & .content {
+
+      height: 0;
+      overflow: inherit;
+      opacity: 0;
+      line-height: 1;
+
+      & .slogan_section {
+
+        .slogan_tab_wrapper {
+
+          position: relative;
+          clear: left;
+          width: 100%;
+          overflow: hidden;
+
+
+          & .tab-content {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out 0s;
+            transition-delay: 0.5s;
+            transition-timing-function: linear;
+            -moz-transition: -moz-transform 1s ease-in-out 0s;
+            -webkit-transition: -webkit-transform 1s ease-in-out 0s;
+
+            .tab-pane {
+
+              width: 100%;
+
+            }
+
+            & .zero {
+              top: 0;
+              left: 0;
+              /* padding: 0 100px; */
+
+              .slogan_img {
+                left: 0;
+                overflow: hidden;
+                img { 
+                  width: 100%;
+                  min-width : 540px;
+                  min-height : 400px;
+                }
+              }
+            }
+
+            & .one {
+              top: 0;
+              left: 100%;
+
+              .slogan_img {
+                left: 100%;
+              }
+            }
+
+            & .two {
+              top: 0;
+              left: 200%;
+
+              .slogan_img {
+                left: 200%;
+              }
+            }
+          }
+
+          & .move-to-second {
+            transform: translateX(-33.3%);
+            -moz-transform: translateX(-33.3%);
+            -webkit-transform: translateX(-33.3%);
+          }
+
+          & .move-to-third {
+            transform: translateX(-66.6%);
+            -moz-transform: translateX(-66.6%);
+            -webkit-transform: translateX(-66.6%);
+          }
+
+          & .move-to-first {
+            transform: translateX(0px);
+            -moz-transform: translateX(0px);
+            -webkit-transform: translateX(0px);
+          }
+        }
+
+        & .slogan_text {
+          padding: 115px 0 0 30px;
+
+          .slogan_img {
+
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            overflow-y: hidden;
+            width: 33.3%;
+
+          }
+
+          & .slogan_title {
+            color: #51a4ff;
+            font-size: 10px;
+            letter-spacing: 2.8px;
+            margin-bottom: 14px;
+            line-height: 1.75;
+          }
+
+          & .slogan_moto {
+            font-size: 28px;
+            font-weight: 100;
+            line-height: 1.2;
+            margin-left : -3px;
+            letter-spacing: 0px;
+            color: #ffffff;
+          }
+
+
+          & .slogan_app_icon {
+            margin-top : 26px;
+            margin-bottom: 50px;
+            
+            img { 
+              width : 70px;
+              height : auto;              
+              margin-right : 21px;
+            }
+
+          }
+
+          .slogan_down_btn {
+            margin-bottom : 34px;
+            
+            img { 
+              height : auto;              
+              width : 60px;
+            }
+          }
+
+        }
+
+        & .slogan_tab_page {
+          margin-left: calc(100% - 100px); /* 페이지 셀렉팅이 나오면 250px 로 변경*/
+          display: flex;
+          position: absolute;
+          top: 870px;
+          justify-content: flex-end;
+
+
+          & .slogan_tab_select_page {
+            margin-top: 5px;
+            font-size: 50px;
+            color: #ffffff;
+            font-weight: bold;
+            font-family: SpoqaHanSans;
+
+          }
+
+          & .slogan_tab_all_page {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #ffffff;
+            display: flex;
+            align-items: flex-end;
+            font-family: SpoqaHanSans;
+
+          }
+
+          .slogan_scroll_down {
+            color: #aaaaaa;
+            font-family : 'Khand';
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+            transform: rotate(90deg);
+          }
+        }
+
+        & .slogan_tab_nav {
+          margin-left: calc(100% - 960px);
+          display: flex;
+          position: absolute;
+          top: 908px;
+          justify-content: flex-end;
+          background-color: #ffffff;
+          height: 160px;
+
+          & .slogan_tab_nav_text {
+            width: calc(880px / 3);
+            padding: 39px 40px 50px 40px;
+            position: relative;
+
+            &:after { /* div 보다 작은 border 집어넣기 */
+              content: "";
+              position: absolute;
+              right: 0;
+              z-index: 100;
+              top: 25%;
+              width: 1px;
+              height: 100px;
+              background: #e3e3e3;
+            }
+
+
+            & .slogan_tab_nav_title {
+              font-size: 20px;
+              margin-bottom: 14px;
+              color: #111111;
+            }
+
+            & .slogan_tab_nav_desc {
+              font-size: 14px;
+              line-height: 20px;
+              color: #999999;
+          font-family : 'APPLE SD Gothic NEO' !important;
+            }
+          }
+
+          & .slogan_tab_nav_text_last{
+
+            width: calc(880px / 3);
+            padding: 39px 40px 50px 40px;
+            position: relative;
+
+            &:after { /* div 보다 작은 border 집어넣기 */
+              position: absolute;
+              right: 0;
+              z-index: 100;
+              top: 25%;
+              width: 1px;
+              height: 100px;
+              background: #e3e3e3;
+            }
+            & .slogan_tab_nav_title {
+              font-size: 20px;
+              margin-bottom: 14px;
+              color: #111111;
+            }
+
+            & .slogan_tab_nav_desc {
+              font-size: 14px;
+              line-height: 20px;
+              color: #999999;
+          font-family : 'APPLE SD Gothic NEO' !important;
+            }
+          }
+
+
+          & .slogan_tab_nav_icon {
+
+            width: 80px;
+            height: 160px;
+
+            & .slogan_tab_nav_icon_right {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 80px;
+              background-color: #111111;
+
+              &:hover {
+                background-color: #2448a4;
+              }
+            }
+
+            & .slogan_tab_nav_icon_left {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 80px;
+              background-color: #dddddd;
+            }
+          }
+        }
+      }
+
+
+      &.fixed {
+        height: auto;
+        opacity: 1;
+      }
+
+
+      & .dapp_section {
+        background-color : #ffffff;
+        padding: 60px 0 36px 0;
+        position: relative;
+
+        & .dapp_title {
+          font-family: 'Khand';
+          font-size: 15px;
+          margin-top : 20px;
+          font-weight: 600;
+          letter-spacing: 3px;
+          text-align: center;
+          color: #111;
+        }
+
+        & .dapp_moto {
+          margin-top: 20px;
+          font-size: 22px;
+          font-weight : 100;
+          line-height: 1.37;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #000;
+          display: flex;
+          justify-content: center;
+
+        }
+
+        & .dapp_desc {
+          font-size: 12px;
+          font-weight: 300;
+          margin-top: 20px;
+          line-height: 1.7;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #777;
+          font-family : 'APPLE SD Gothic NEO' !important;
+
+        }
+
+        & .dapp_img {
+
+          img {
+            width : 100%;
+          }
+        }
+      }
+
+
+      & .wallet_section {
+        background-color: #f6f6f6;
+        padding: 60px 26px 30px 26px;
+        display: flex;
+        justify-content: center;
+
+
+        & .wallet_text {
+          text-align: center;
+          color: #111111;
+          font-weight: 100;
+          font-size: 22px;
+
+          & span {
+            line-height: 1.37;
+          }
+        }
+
+        .wallet_tabs {
+
+          margin-right : 15px;
+
+          & .nav-tabs {
+            margin-top : 21px;
+            display: flex;
+            justify-content: center;
+
+            .nav-item {
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+
+              .nav-link {
+                color : #333;
+                font-size : 14px;
+                font-weight:300;
+                text-align : center;
+                letter-spacing : 0px;
+              }
+
+              img {
+                padding : 0 10px;
+              }
+
+            }
+
+
+            .active {
+              background-color: #2448a4;
+              border-radius: 25px;
+              padding: 7px 11px 8px 11px !important;
+              margin : 0 10px;
+              text-align : center;
+              vertical-align : middle;
+
+              .nav-link { 
+                color : #ffffff;
+              }
+
+              &:first-child {
+                margin: 0px 10px 0 0;
+              }
+            }
+
+
+
+          }
+
+          .tab-content {
+            margin : 20px 0;
+            font-size: 12px;
+            line-height: 18px;
+            color: #777777;
+            letter-spacing: 0px;
+            font-weight : 300;
+            text-align : center;
+            min-height : 40px;
+          font-family : 'APPLE SD Gothic NEO' !important;
+            span {
+              line-height : 1.7;
+            }
+          }
+        }
+
+        & .wallet_div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          padding-left : 15px;
+
+          .white_back {
+            width : calc(100% - (1355px + (50% - 640px)));
+            z-index: 5;
+          }
+
+          .selectedItem {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            top: 0px;
+            right: 40px;
+            width: 190px;
+            height: auto;
+            margin: 17px calc((100% - 260px) / 2) ;
+          }
+
+          & .wallet_img {
+            display: none;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+            top: 0px;
+            right: 40px;
+            width: 190px;
+            height: auto;
+            margin: 17px calc((100% - 260px) / 2) ;
+
+
+            &.active {
+              display: flex;
+              z-index: 4;
+              animation: show 0.8s ease-in-out forwards;
+            }
+          }
+        }
+
+        .wallet_div_cover {
+          position: absolute;
+          top: 20px;
+          right: -18px;
+          width: calc(100% - 490px);
+          max-width: 190px;
+          height: 100%;
+          background-color: #ffffff;
+          z-index: 4;
+        }
+
+      }
+
+
+      & .reward_section {
+        padding: 60px 0 40px 0;
+        text-align: center;
+
+        & .reward_title {
+          font-size: 15px;
+          letter-spacing: 0px;
+          font-weight: 500;
+          color: #111111;
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 14px;
+            height: 14px;
+            margin: 0 5px;
+          }
+        }
+
+        & .reward_moto {
+          font-size: 22px;
+          letter-spacing: 0px;
+          line-height: 1.43;
+          font-weight: 100;
+          margin-top: 20px;
+        }
+
+        & .reward_desc {
+          font-size: 12px;
+          letter-spacing: 0px;
+          margin-top: 20px;
+          color: #777777;
+          line-height: 1.7;
+          font-weight: 300;
+          font-family : 'APPLE SD Gothic NEO' !important;
+
+        }
+
+        & .reward_img {
+          margin-top : 10px;
+          margin-left : -65px;
+          overflow: hidden;
+
+          img {
+            width: 140vw;
+          }
+        }
+      }
+
+      & .doubleR_section {
+        background-color: #000000;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("../../../assets/images/combined-shape.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto;
+
+        & .doubleR_title {
+          max-width: 145px;
+          padding : 5px 12px;
+          margin-left: calc((100% - 145px) / 2);
+          font-size : 10px;
+          border-radius: 19px;
+          background-color: #a2835d;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+        }
+
+        & .doubleR_moto {
+
+          display: flex;
+          justify-content: center;
+
+          font-family: 'Khand';
+          margin-top: 11px;
+          font-size: 30px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          text-align: center;
+          color: #ffffff;
+
+          .icon-x {
+            margin: 5px;
+            width : 22px !important;
+            height : 22px !important;
+          }
+
+          img { 
+            width : 122px;
+            height : 30px;
+          }
+        }
+
+        & .doubleR_desc {
+
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 1.7;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #ffffff;
+          margin-top: 11px;
+
+          font-family : 'APPLE SD Gothic NEO' !important;
+        }
+
+        & .doubleR_img {
+          margin-top: 33px;
+          overflow: hidden;
+          margin-left : -10px;
+
+          img {
+            width: 140%;
+          }
+        }
+
+        & .doubleR_icon {
+          margin-top: 14px;
+          display: flex;
+          justify-content: center;
+
+          img { 
+            width : 150px;
+            height : 35px;
+          }
+
+        }
+      }
+      
+
+      & .market_section {
+        padding: 60px 0 40px 0;
+
+        & .market_title {
+          font-size: 15px;
+          font-weight: 600;
+          font-family: 'Khand';
+          letter-spacing: 3px;
+          text-align: center;
+          color: #111111;
+        }
+
+        & .market_moto {
+          margin-top: 20px;
+          font-size: 22px;
+          font-weight: 100;
+          line-height: 1.43;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #111111;
+        }
+
+        & .market_desc {
+          margin-top: 20px;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 1.55;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #777777;
+          font-family : 'APPLE SD Gothic NEO' !important;
+        }
+
+        & .market_img {
+          margin-top: 40px;
+          margin-left : -35px;
+          overflow: hidden;
+
+          img {
+            width: 105%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

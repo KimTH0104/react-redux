@@ -1,0 +1,36 @@
+.globalHeader {
+
+  width: 100%;
+  background-color: #000;
+
+  @media screen and (min-width: 541px) {
+  }
+
+  @media screen and (max-width: 540px) {
+  }
+
+}
+
+.Loading__bar___21yOt {
+  height : 4px;
+  background-color: #FFD55D;
+}
+
+.bg_gnb.show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  z-index: 4;
+
+  &.hide {
+    display: none;
+  }
+}
+
+.globalHeaderTerms{
+    background-color: rgba(0,0,0);
+}
+

@@ -1,0 +1,259 @@
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch:300,400,500,600,700&display=swap');
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css");
+@import url('https://fonts.googleapis.com/css?family=Khand&display=swap');
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* mobile firefox too! */
+}
+
+input, button, optgroup, select, textarea {
+  font-family: 'Noto Sans KR', "Open Sans", 'Helvetica Neue', 'Khand','Apple SD Gothic Neo', Arial, Helvetica, sans-serif !important ;
+}
+
+html {
+  line-height: 1em;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-width: 320px;
+  background: #FFFFFF;
+  font-family: 'Noto Sans KR', "Open Sans", 'Helvetica Neue', 'Khand', Arial, Helvetica, sans-serif !important ;
+  font-size: 15px;
+  line-height: 1em;
+  color: #151515;
+  font-smoothing: antialiased;
+}
+
+a {
+  color : #000000 !important;
+  text-decoration: none;
+}
+
+#app-container {
+}
+
+.container {
+}
+
+.container__content {
+
+}
+
+.inner_container {
+
+}
+
+.inner_container__content {
+  position: relative;
+}
+
+@media screen and (max-width: 540px) {
+
+  .inner_container__content {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 30px;
+  }
+
+  .section_title {
+    //margin: 103px 0 58px;
+    //font-size: 26px;
+    //font-weight: bold;
+    //color: #ebae2b;
+    //text-align: center;
+    //line-height: 1em;
+  }
+
+  .section_description {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+  .content {
+
+    .title {
+      font-size: 21px;
+      margin: 0 0 36px 0;
+      font-weight: bold;
+      line-height: 1.4em;
+      /* text-align: center; */
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.6em;
+      text-align: center;
+    }
+  }
+
+  .sm-fz-16 {
+    font-size: 16px;
+  }
+
+  .sm-hide {
+    display: none !important;
+  }
+
+  .page_title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 21px;
+    line-height: 1em;
+    text-align: center;
+  }
+
+  .page_description {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.2em;
+    text-align: center;
+  }
+}
+
+
+.eng {
+  font-family: 'Khand' !important;
+}
+
+.eng sub { 
+  font-family : 'APPLE SD Gothic NEO' !important;
+}
+
+@media screen and (min-width: 541px) {
+
+  .inner_container__content {
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 90px;
+  }
+
+  .section_title {
+    //margin: 103px 0 65px;
+    //font-size: 40px;
+    //font-weight: bold;
+    //color: #ebae2b;
+    //line-height: 1em;
+  }
+
+  .section_description {
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+
+  .content {
+
+    .title {
+      font-size: 26px;
+      margin: 0 0 43px 0;
+      font-weight: bold;
+      line-height: 1.4em;
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 1.5em;
+    }
+  }
+
+  .lg-hide {
+    display: none !important;
+  }
+
+  .lg-fz-18 {
+    font-size: 18px;
+  }
+
+  .page_title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    margin: 125px 0 35px;
+    line-height: 1em;
+  }
+
+  .page_description {
+    font-size: 25px;
+    color: #fff;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+.pageSlider-enter {
+  transform: translate3d(100%, 0, 0);
+  z-index:10;
+}
+.pageSlider-enter.pageSlider-enter-active {
+  transform: translate3d(0, 0, 0);
+  transition: all 600ms;
+}
+.pageSlider-exit{
+  z-index:9;
+  transform: translate3d(0, 0, 0);
+}
+.pageSlider-exit.pageSlider-exit-active {
+  transform: translate3d(-100%, 0, 0);
+  transition: all 600ms;
+}
