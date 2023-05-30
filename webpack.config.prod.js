@@ -106,8 +106,8 @@ if (IS_S3_DEPLOY) {
     // include: /.*\.(css|js)/,
     // s3Options are required
     s3Options: {
-      accessKeyId: 'AKIAIXAGQTTKVGLWNCCA', //process.env.AWS_ACCESS_KEY,
-      secretAccessKey: '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', //process.env.AWS_SECRET_KEY,
+      accessKeyId: '..', //process.env.AWS_ACCESS_KEY,
+      secretAccessKey: "...", //process.env.AWS_SECRET_KEY,
     },
     s3UploadOptions: {
       Bucket: 'bucket', //process.env.AWS_BUCKET,
